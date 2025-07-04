@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 export const MealsContext = React.createContext({
   AllMeals: null,
-  MealsInCart: null,
+  MealsInCart: [],
 });
 
 export function MealsContextProvider({ children }) {
