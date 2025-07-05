@@ -49,7 +49,7 @@ export function MealsContextProvider({ children }) {
 
   useEffect(() => {
     async function getAllMeals() {
-      const response = await fetch("https://t3f8qg-3000.csb.app/meals", {
+      const response = await fetch("http://localhost:3000/meals", {
         method: "GET",
       });
       const RespMeals = await response.json();

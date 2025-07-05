@@ -9,7 +9,7 @@ export default function Modal({children, open}){
         }
     },[])
     return createPortal(
-        <Modal>{children}</Modal>,
+        <dialog ref={dialog}>{children}</dialog>,
         document.getElementById('modal')
     )
 }
